@@ -63,5 +63,11 @@ const btn=document.getElementById('langBtn');let language='en';
 btn.addEventListener('click',()=>{language=language==='en'?'ar':'en';document.documentElement.lang=language;document.documentElement.dir=language==='ar'?'rtl':'ltr';document.querySelectorAll('[data-en]').forEach(el=>el.textContent=el.dataset[language]);btn.textContent=language==='en'?'العربية':'English';document.getElementById('search').placeholder=language==='en'?'Search categories...':'ابحث في التصنيفات...';});
 function filterCards(){const q=document.getElementById('search').value.trim().toLowerCase();document.querySelectorAll('.searchable').forEach(card=>{card.style.display=card.innerText.toLowerCase().includes(q)?'block':'none';});}
 document.getElementById('searchBtn').addEventListener('click',filterCards);document.getElementById('search').addEventListener('input',filterCards);
-</script>
+<section id="team" style="max-width:1120px;margin:30px auto;padding:24px;text-align:center">
+  <h2>فريق المشروع</h2>
+  <div style="background:#fff;padding:20px;border-radius:12px;border:1px solid #e5eaf3">
+   <h3>EBRAHIM MOHAMED EBRAHIM HAMADA RASAD</h3>
+    <p>مؤسس المشروع ومطور الموقع</p>
+  </div>
+</section></script>
 </body></html>
