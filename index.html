@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="EduBridge helps students explore learning resources and educational opportunities.">
+<title>EduBridge | Learn. Explore. Grow.</title>
+<style>
+:root{--navy:#14213d;--blue:#2563eb;--cyan:#38bdf8;--ink:#182230;--muted:#64748b;--bg:#f5f8ff;--white:#fff;--line:#e5eaf3}
+*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6}
+header{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5}
+.nav{max-width:1120px;margin:auto;padding:16px 22px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+.logo{font-size:1.45rem;font-weight:800;color:var(--navy);letter-spacing:-1px}.logo span{color:var(--blue)}
+nav{display:flex;align-items:center;gap:22px}nav a{color:#475569;text-decoration:none;font-weight:600;font-size:.94rem}nav a:hover{color:var(--blue)}
+button,.btn{border:0;border-radius:12px;padding:11px 16px;background:var(--blue);color:#fff;font-weight:700;cursor:pointer;text-decoration:none;display:inline-block}
+button:hover,.btn:hover{background:#1d4ed8}.lang{background:#eaf1ff;color:var(--blue)}
+.hero{background:linear-gradient(120deg,#14213d,#1d4ed8 70%,#38bdf8);color:#fff;padding:78px 22px}
+.hero-inner{max-width:1120px;margin:auto;display:grid;grid-template-columns:1.3fr .7fr;align-items:center;gap:35px}
+.eyebrow{text-transform:uppercase;letter-spacing:2px;font-size:.78rem;font-weight:800;color:#bfdbfe}
+h1{font-size:clamp(2.4rem,5vw,4.3rem);line-height:1.08;margin:14px 0 20px;letter-spacing:-2px}
+.hero p{max-width:620px;color:#e0eaff;font-size:1.1rem}.hero-card{background:#ffffff18;border:1px solid #ffffff45;border-radius:24px;padding:26px;backdrop-filter:blur(8px)}
+.hero-card strong{font-size:2rem;display:block}.hero-card div{padding:12px 0;border-bottom:1px solid #ffffff35}.hero-card div:last-child{border:0}
+section{max-width:1120px;margin:auto;padding:65px 22px}.section-head{margin-bottom:28px}.section-head h2{font-size:2rem;color:var(--navy);margin:0 0 8px}.section-head p{margin:0;color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:23px;box-shadow:0 8px 25px #14213d08}.icon{width:44px;height:44px;border-radius:13px;background:#eaf1ff;color:var(--blue);display:grid;place-items:center;font-size:1.35rem;margin-bottom:14px}.card h3{margin:0 0 8px;color:var(--navy)}.card p{margin:0 0 15px;color:var(--muted)}.tag{display:inline-block;padding:5px 10px;border-radius:30px;background:#eff6ff;color:#1d4ed8;font-size:.78rem;font-weight:700}
+.searchbar{display:flex;gap:10px;margin:18px 0 22px}.searchbar input{flex:1;min-width:0;border:1px solid var(--line);border-radius:12px;padding:13px 15px;font:inherit;background:#fff}
+.notice{background:#fff8e7;border:1px solid #f4d58d;border-radius:12px;padding:12px 15px;color:#78520a;font-size:.9rem;margin-bottom:18px}
+.cta{background:#eaf1ff;border-radius:22px;padding:35px;display:flex;align-items:center;justify-content:space-between;gap:20px}.cta h2{margin:0;color:var(--navy)}.cta p{margin:5px 0 0;color:var(--muted)}
+footer{background:var(--navy);color:#dbeafe;padding:28px 22px;text-align:center}footer small{color:#b8c8e8}
+[dir=rtl] body{text-align:right}[dir=rtl] nav{flex-direction:row-reverse}[dir=rtl] .hero-inner{direction:rtl}
+@media(max-width:760px){nav{gap:10px;flex-wrap:wrap;justify-content:flex-end}nav a{font-size:.82rem}.hero-inner{grid-template-columns:1fr}.grid{grid-template-columns:1fr}.hero{padding:55px 10px}section{padding:48px 18px}.cta{display:block}.cta .btn{margin-top:18px}}
+</style>
+</head>
+<body>
+<header><div class="nav">
+<div class="logo">Edu<span>Bridge</span></div>
+<nav><a href="#about" data-en="About" data-ar="عن المنصة">About</a><a href="#opportunities" data-en="Opportunities" data-ar="الفرص">Opportunities</a><a href="#courses" data-en="Learning" data-ar="التعلم">Learning</a><button class="lang" id="langBtn">العربية</button></nav>
+</div></header>
+<main>
+<div class="hero"><div class="hero-inner">
+<div><div class="eyebrow" data-en="Your next step starts here" data-ar="خطوتك القادمة تبدأ من هنا">Your next step starts here</div>
+<h1 data-en="Learn more. Find opportunities. Build your future." data-ar="تعلّم أكثر. اكتشف الفرص. ابنِ مستقبلك.">Learn more. Find opportunities. Build your future.</h1>
+<p data-en="EduBridge is a student-focused concept platform that brings learning resources and educational opportunities together in one simple place." data-ar="EduBridge منصة تجريبية موجهة للطلاب، تجمع مصادر التعلم والفرص التعليمية في مكان واحد وبطريقة بسيطة.">EduBridge is a student-focused concept platform that brings learning resources and educational opportunities together in one simple place.</p>
+<a class="btn" href="#opportunities" data-en="Explore opportunities" data-ar="اكتشف الفرص">Explore opportunities</a></div>
+<div class="hero-card"><div><strong>01</strong><span data-en="Discover educational paths" data-ar="اكتشف المسارات التعليمية">Discover educational paths</span></div><div><strong>02</strong><span data-en="Learn new skills" data-ar="اكتسب مهارات جديدة">Learn new skills</span></div><div><strong>03</strong><span data-en="Plan your next step" data-ar="خطط لخطوتك القادمة">Plan your next step</span></div></div>
+</div></div>
+<section id="about"><div class="section-head"><h2 data-en="One bridge to new possibilities" data-ar="جسر واحد نحو فرص جديدة">One bridge to new possibilities</h2><p data-en="A clear starting point for students who want to keep growing." data-ar="نقطة بداية واضحة للطلاب الراغبين في تطوير أنفسهم.">A clear starting point for students who want to keep growing.</p></div>
+<div class="grid"><article class="card"><div class="icon">🎓</div><h3 data-en="Student-first" data-ar="الطالب أولاً">Student-first</h3><p data-en="Designed around the questions students ask when planning their education." data-ar="مصممة حول الأسئلة التي يطرحها الطلاب أثناء التخطيط لتعليمهم.">Designed around the questions students ask when planning their education.</p></article><article class="card"><div class="icon">🌍</div><h3 data-en="Explore widely" data-ar="اكتشف خيارات أكثر">Explore widely</h3><p data-en="Organize information about local and international learning pathways." data-ar="تنظيم معلومات عن مسارات التعلم المحلية والدولية.">Organize information about local and international learning pathways.</p></article><article class="card"><div class="icon">🚀</div><h3 data-en="Take action" data-ar="ابدأ التنفيذ">Take action</h3><p data-en="Turn research into a practical plan for your next academic step." data-ar="حوّل البحث إلى خطة عملية لخطوتك الدراسية القادمة.">Turn research into a practical plan for your next academic step.</p></article></div></section>
+<section id="opportunities"><div class="section-head"><h2 data-en="Opportunity explorer" data-ar="استكشف الفرص">Opportunity explorer</h2><p data-en="Sample categories to help students organize their search." data-ar="تصنيفات تجريبية تساعد الطلاب على تنظيم بحثهم.">Sample categories to help students organize their search.</p></div>
+<div class="notice" data-en="Demo content: these are example categories, not verified or currently open scholarships. Always confirm details on the provider’s official website." data-ar="محتوى تجريبي: هذه تصنيفات وأمثلة وليست منحًا مؤكدة أو متاحة حاليًا. تحقق دائمًا من التفاصيل عبر الموقع الرسمي للجهة المقدمة.">Demo content: these are example categories, not verified or currently open scholarships. Always confirm details on the provider’s official website.</div>
+<div class="searchbar"><input id="search" placeholder="Search categories..." aria-label="Search categories"><button id="searchBtn" data-en="Search" data-ar="بحث">Search</button></div>
+<div class="grid" id="opCards">
+<article class="card searchable"><div class="icon">✈️</div><h3 data-en="Study abroad" data-ar="الدراسة بالخارج">Study abroad</h3><p data-en="Explore the kinds of exchange and international study programs available to students." data-ar="تعرّف على أنواع برامج التبادل والدراسة الدولية المتاحة للطلاب.">Explore the kinds of exchange and international study programs available to students.</p><span class="tag" data-en="International" data-ar="دولي">International</span></article>
+<article class="card searchable"><div class="icon">🏅</div><h3 data-en="Scholarships" data-ar="المنح الدراسية">Scholarships</h3><p data-en="Learn how to compare eligibility, deadlines, required documents, and funding." data-ar="تعلّم مقارنة شروط الأهلية والمواعيد والمستندات والتمويل.">Learn how to compare eligibility, deadlines, required documents, and funding.</p><span class="tag" data-en="Funding" data-ar="تمويل">Funding</span></article>
+<article class="card searchable"><div class="icon">🤝</div><h3 data-en="Volunteering" data-ar="التطوع">Volunteering</h3><p data-en="Understand how volunteering can build experience and community skills." data-ar="تعرّف على دور التطوع في بناء الخبرة والمهارات المجتمعية.">Understand how volunteering can build experience and community skills.</p><span class="tag" data-en="Experience" data-ar="خبرة">Experience</span></article>
+</div></section>
+<section id="courses"><div class="section-head"><h2 data-en="Keep learning" data-ar="استمر في التعلم">Keep learning</h2><p data-en="Suggested learning tracks for building a strong foundation." data-ar="مسارات تعليمية مقترحة لبناء أساس قوي.">Suggested learning tracks for building a strong foundation.</p></div>
+<div class="grid"><article class="card"><div class="icon">💻</div><h3>Programming</h3><p data-en="Start with programming fundamentals, problem solving, and small projects." data-ar="ابدأ بأساسيات البرمجة وحل المشكلات والمشروعات الصغيرة.">Start with programming fundamentals, problem solving, and small projects.</p><span class="tag">Computer Science</span></article><article class="card"><div class="icon">🗣️</div><h3 data-en="Languages" data-ar="اللغات">Languages</h3><p data-en="Build communication skills and prepare for language proficiency exams." data-ar="طوّر مهارات التواصل واستعد لاختبارات إتقان اللغة.">Build communication skills and prepare for language proficiency exams.</p><span class="tag" data-en="Personal growth" data-ar="تطوير شخصي">Personal growth</span></article><article class="card"><div class="icon">📊</div><h3 data-en="Digital skills" data-ar="المهارات الرقمية">Digital skills</h3><p data-en="Explore databases, web development, and digital productivity tools." data-ar="استكشف قواعد البيانات وتطوير الويب وأدوات الإنتاجية الرقمية.">Explore databases, web development, and digital productivity tools.</p><span class="tag">Technology</span></article></div></section>
+<section><div class="cta"><div><h2 data-en="Your journey is built one step at a time." data-ar="رحلتك تُبنى خطوة بخطوة.">Your journey is built one step at a time.</h2><p data-en="Research carefully, learn consistently, and keep moving forward." data-ar="ابحث بعناية، وتعلّم باستمرار، وواصل التقدم.">Research carefully, learn consistently, and keep moving forward.</p></div><a class="btn" href="#about" data-en="Back to top" data-ar="العودة للأعلى">Back to top</a></div></section>
+</main>
+<footer><div class="logo" style="color:white">Edu<span>Bridge</span></div><small data-en="A student project concept • Built for learning and exploration" data-ar="فكرة مشروع طلابي • صُممت للتعلم والاستكشاف">A student project concept • Built for learning and exploration</small></footer>
+<script>
+const btn=document.getElementById('langBtn');let language='en';
+btn.addEventListener('click',()=>{language=language==='en'?'ar':'en';document.documentElement.lang=language;document.documentElement.dir=language==='ar'?'rtl':'ltr';document.querySelectorAll('[data-en]').forEach(el=>el.textContent=el.dataset[language]);btn.textContent=language==='en'?'العربية':'English';document.getElementById('search').placeholder=language==='en'?'Search categories...':'ابحث في التصنيفات...';});
+function filterCards(){const q=document.getElementById('search').value.trim().toLowerCase();document.querySelectorAll('.searchable').forEach(card=>{card.style.display=card.innerText.toLowerCase().includes(q)?'block':'none';});}
+document.getElementById('searchBtn').addEventListener('click',filterCards);document.getElementById('search').addEventListener('input',filterCards);
+</script>
+</body></html>
